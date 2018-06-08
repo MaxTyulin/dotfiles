@@ -8,4 +8,5 @@ set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
 
-
+" For tmux
+set term=xterm-256color
