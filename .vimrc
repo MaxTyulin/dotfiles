@@ -10,3 +10,5 @@ set expandtab
 
 " For tmux
 set term=xterm-256color
+
+colorscheme darkblue
