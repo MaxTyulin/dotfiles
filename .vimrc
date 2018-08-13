@@ -12,3 +12,6 @@ set expandtab
 set term=xterm-256color
 
 colorscheme darkblue
+
+" Increase copy buffer size
+set viminfo='20,<1000
