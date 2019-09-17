@@ -13,3 +13,14 @@ function mkcd() {
     case "$1" in /*) :;; *) set -- "./$1";; esac
     mkdir -p "$1" && cd "$1"
 }
+
+# Auto activate virtualenv, if there is .env folder
+function cd() {
+    builtin cd $1
+    if [[ -d .env ]] ; then
+        if [[ -n "$VIRTUAL_ENV" ]] ; then
+            deactivate
+        fi
+        . .env/bin/activate
+    fi
+}
