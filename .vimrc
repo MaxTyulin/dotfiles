@@ -15,3 +15,9 @@ colorscheme darkblue
 
 " Increase copy buffer size
 set viminfo='20,<1000
+
+" Open files in a new tab (netrw option)
+let g:netrw_browse_split = 3
+
+" The tree list view  (netrw option)
+let g:netrw_liststyle = 3
