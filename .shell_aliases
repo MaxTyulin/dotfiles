@@ -6,6 +6,7 @@
 alias v=vim
 alias ls='LC_ALL=C ls --color --group-directories-first -h'
 
+unalias l
 function l() { ls -alF $@ | less -rXF; }
 
 # Creates new directory and moves into it
