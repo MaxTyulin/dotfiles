@@ -15,13 +15,13 @@ function mkcd() {
     mkdir -p "$1" && cd "$1"
 }
 
-# Auto activate virtualenv, if there is .env folder
+# Auto activate virtualenv, if there is .venv folder
 function cd() {
     builtin cd $1
-    if [[ -d .env ]] ; then
+    if [[ -d .venv ]] ; then
         if [[ -n "$VIRTUAL_ENV" ]] ; then
             deactivate
         fi
-        . .env/bin/activate
+        . .venv/bin/activate
     fi
 }
